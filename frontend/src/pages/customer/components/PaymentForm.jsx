@@ -44,10 +44,10 @@ const PaymentForm = ({ handleBack }) => {
     }, [productID, dispatch]);
 
     const productsQuantity = currentUser.cartDetails.reduce((total, item) => total + item.quantity, 0);
-    const totalPrice = currentUser.cartDetails.reduce((total, item) => total + (item.quantity * item.price.cost), 0);
+    const totalPrice = currentUser.cartDetails.reduce((total, item) => total + (item.quantity * item.mrp), 0);
 
     const singleProductQuantity = productDetailsCart && productDetailsCart.quantity
-    const totalsingleProductPrice = productDetailsCart && productDetailsCart.price && productDetailsCart.price.cost * productDetailsCart.quantity
+    const totalsingleProductPrice = productDetailsCart && productDetailsCart.price && productDetailsCart.mrp * productDetailsCart.quantity
 
     const paymentID = `${paymentData.cardNumber.slice(-4)}-${paymentData.expDate.slice(0, 2)}${paymentData.expDate.slice(-2)}-${Date.now()}`;
     const paymentInfo = { id: paymentID, status: "Successful" }

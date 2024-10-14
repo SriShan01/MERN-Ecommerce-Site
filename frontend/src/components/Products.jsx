@@ -60,9 +60,9 @@ const Products = ({ productData }) => {
             <ProductContainer>
               <ProductImage src={data.productImage} />
               <ProductName>{data.productName}</ProductName>
-              <PriceMrp>{data.price.mrp}</PriceMrp>
-              <PriceCost>₹{data.price.cost}</PriceCost>
-              <PriceDiscount>{data.price.discountPercent}% off</PriceDiscount>
+              <PriceMrp>{data.price}</PriceMrp>
+              <PriceCost>₹{data.mrp}</PriceCost>
+              <PriceDiscount>{data.mrp}% off</PriceDiscount>
               <AddToCart>
                 {currentRole === "Customer" &&
                   <>

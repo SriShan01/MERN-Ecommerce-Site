@@ -87,7 +87,7 @@ If you encounter a network error while signing up, follow these steps to resolve
 const REACT_APP_BASE_URL = "http://localhost:5000";
 ```
 
-3. Replace all instances of `process.env.REACT_APP_BASE_URL` with `REACT_APP_BASE_URL`.
+3. Replace all instances of `REACT_APP_BASE_URL` with `REACT_APP_BASE_URL`.
 
 The issue arises because the `.env` file in the frontend may not work for all users, while it works for me.
 

@@ -33,8 +33,8 @@ const Cart = ({ setIsCartOpen }) => {
     };
 
     const totalQuantity = cartDetails.reduce((total, item) => total + item.quantity, 0);
-    const totalOGPrice = cartDetails.reduce((total, item) => total + (item.quantity * item.price.mrp), 0);
-    const totalNewPrice = cartDetails.reduce((total, item) => total + (item.quantity * item.price.cost), 0);
+    const totalOGPrice = cartDetails.reduce((total, item) => total + (item.quantity * item.price), 0);
+    const totalNewPrice = cartDetails.reduce((total, item) => total + (item.quantity * item.mrp), 0);
 
     const productViewHandler = (productID) => {
         navigate("/product/view/" + productID)
@@ -104,19 +104,19 @@ const Cart = ({ setIsCartOpen }) => {
                                         {data.productName}
                                     </Typography>
                                     <Typography variant="subtitle2">
-                                        Original Price: ₹{data.price.mrp}
+                                        Original Price: ₹{data.price}
                                     </Typography>
                                     <Typography variant="subtitle2">
-                                        Discount: {data.price.discountPercent}% Off
+                                        Discount: {data.mrp}% Off
                                     </Typography>
                                     <Typography variant="subtitle2">
-                                        Final Price: ₹{data.price.cost}
+                                        Final Price: ₹{data.mrp}
                                     </Typography>
                                     <Typography variant="subtitle2">
                                         Quantity: {data.quantity}
                                     </Typography>
                                     <Typography variant="subtitle2">
-                                        Total: ₹{data.quantity * data.price.cost}
+                                        Total: ₹{data.quantity * data.mrp}
                                     </Typography>
                                     <ButtonContainer>
                                         <Button

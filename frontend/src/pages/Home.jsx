@@ -82,10 +82,10 @@ const Home = () => {
                 </RightComponent>
               </Component>
 
-              <Slide products={productData} title="Deals of the Day" />
+              {/* <Slide products={productData} title="Deals of the Day" /> */}
               <Slide products={productData} title="Suggested Items" />
-              <Slide products={productData} title="Discounts for You" />
-              <Slide products={productData} title="Recommended Items" />
+              {/* <Slide products={productData} title="Discounts for You" /> */}
+              {/* <Slide products={productData} title="Recommended Items" /> */}
             </>
           )}
         </>

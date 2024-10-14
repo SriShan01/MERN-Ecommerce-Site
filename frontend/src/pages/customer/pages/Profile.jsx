@@ -23,6 +23,15 @@ const Profile = () => {
             Email : {currentUser ? currentUser.email : ''}
           </ProfileText>
           <ProfileText variant="h6">
+            Age : {currentUser ? currentUser.age : ''}
+          </ProfileText>
+          <ProfileText variant="h6">
+            Gender : {currentUser ? currentUser.gender : ''}
+          </ProfileText>
+          <ProfileText variant="h6">
+            Category : {currentUser ? currentUser.category : ''}
+          </ProfileText>
+          <ProfileText variant="h6">
             Role : {currentUser ? currentUser.role : ''}
           </ProfileText>
         </ProfileHeader>

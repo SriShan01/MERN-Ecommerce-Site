@@ -49,11 +49,11 @@ const ProductCard = ({ product }) => {
                                 textDecoration: 'line-through',
                             }}
                         >
-                            {product.price && product.price.mrp}
+                            {product.price && product.price}
                         </Typography>
                     </Typography>
                     <Typography variant="subtitle1">
-                        ₹{product.price && product.price.cost}
+                        ₹{product.price && product.mrp}
                     </Typography>
                 </Stack>
             </Stack>

@@ -92,9 +92,9 @@ const ViewOrder = () => {
                                     <ProductInfo>
                                         <ProductName>{productDetails && productDetails.productName}</ProductName>
                                         <PriceContainer>
-                                            <PriceCost>₹{productDetails && productDetails.price && productDetails.price.cost}</PriceCost>
-                                            <PriceMrp>₹{productDetails && productDetails.price && productDetails.price.mrp}</PriceMrp>
-                                            <PriceDiscount>{productDetails && productDetails.price && productDetails.price.discountPercent}% off</PriceDiscount>
+                                            <PriceCost>₹{productDetails && productDetails.price && productDetails.mrp}</PriceCost>
+                                            <PriceMrp>₹{productDetails && productDetails.price && productDetails.price}</PriceMrp>
+                                            <PriceDiscount>{productDetails && productDetails.price && productDetails.mrp}% off</PriceDiscount>
                                         </PriceContainer>
                                         <Description>{productDetails && productDetails.description}</Description>
                                         <ProductDetails>
