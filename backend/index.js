@@ -21,10 +21,6 @@ mongoose
   .then(console.log("Connected to MongoDB"))
   .catch((err) => console.log("NOT CONNECTED TO NETWORK", err));
 
-app.get("/", (req, res) => {
-  res.send("API is working fine");
-});
-
 app.use("/", Routes);
 
 app.listen(PORT, () => {

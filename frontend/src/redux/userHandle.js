@@ -26,7 +26,8 @@ import {
   updateCurrentUser,
 } from "./userSlice";
 
-const REACT_APP_BASE_URL = "http://localhost:5000";
+// const REACT_APP_BASE_URL = "http://localhost:5000";
+const REACT_APP_BASE_URL = "https://recommendation-ecommerce-site-back.vercel.app/";
 
 export const authUser = (fields, role, mode) => async (dispatch) => {
   dispatch(authRequest());
