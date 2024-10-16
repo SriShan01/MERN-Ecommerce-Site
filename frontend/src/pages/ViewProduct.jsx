@@ -84,8 +84,10 @@ const ViewProduct = () => {
 
       const result2Array = await Promise.all(
         dataRecommendations.slice(0, 5).map(async (item) => {
+          const encodedProductName = encodeURIComponent(item);
+
           const result2 = await axios.get(
-            `${REACT_APP_BASE_URL}/searchProductRecommendation/${item}`
+            `${REACT_APP_BASE_URL}/searchProductRecommendation/${encodedProductName}`
           );
           console.log("result2.data", result2.data);
           return result2.data;

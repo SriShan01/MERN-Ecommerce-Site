@@ -4,8 +4,7 @@ module.exports = function (app) {
   app.use(
     "/recommend",
     createProxyMiddleware({
-      target:
-        "https://reccomendtest-cedqapfwgdazbuer.eastus2-01.azurewebsites.net",
+      target: "https://similar-product.azurewebsites.net",
       changeOrigin: true,
     })
   );
