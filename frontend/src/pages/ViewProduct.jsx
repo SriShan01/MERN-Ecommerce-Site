@@ -21,9 +21,9 @@ import axios from "axios";
 import { setFilteredProducts } from "../redux/userSlice";
 import { useLocation, useNavigate } from "react-router-dom";
 
-// const REACT_APP_BASE_URL = "http://localhost:5000";
-const REACT_APP_BASE_URL =
-  "https://recommendation-ecommerce-site-back.vercel.app/";
+const REACT_APP_BASE_URL = "http://localhost:5000";
+// const REACT_APP_BASE_URL =
+//   "https://recommendation-ecommerce-site-back.vercel.app/";
 
 const ViewProduct = () => {
   const [productData, setProductData] = useState([]);

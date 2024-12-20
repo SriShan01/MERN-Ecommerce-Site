@@ -6,9 +6,9 @@ import { useDispatch } from "react-redux";
 import { getSearchedProducts } from "../../../redux/userHandle";
 import axios from "axios";
 import { setFilteredProducts } from "../../../redux/userSlice";
-// const REACT_APP_BASE_URL = "http://localhost:5000";
-const REACT_APP_BASE_URL =
-  "https://recommendation-ecommerce-site-back.vercel.app/";
+const REACT_APP_BASE_URL = "http://localhost:5000";
+// const REACT_APP_BASE_URL =
+//   "https://recommendation-ecommerce-site-back.vercel.app/";
 
 const Search = () => {
   const navigate = useNavigate();
